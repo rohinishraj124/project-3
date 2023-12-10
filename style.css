@@ -1,0 +1,70 @@
+.box {
+    width: 1000px;
+    height: 1000px;
+    background-color: white;
+}
+
+.d1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: fixed;
+    top: 50px;
+    left: 475px;
+}
+
+.d2 {
+    width: 125px;
+    height: 125px;
+    position: fixed;
+    background-color: red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: 350px;
+    left: 465px;
+
+}
+
+.d3 {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    transform: rotate(60deg);
+    position: fixed;
+    top: 140px;
+    left: 300px;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+
+}
+
+.d3::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    transform: rotate(150deg);
+    top: -250px;
+    left: 145px;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    display: flex;
+
+}
+
+.d4 {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    top: 178px;
+    left: 488px;
+    box-shadow:
+        138px 0 0 -15px red,
+        -150px 0 0 -15px red,
+        -150px 0 0 27px yellow,
+        138px 0 0 27px yellow;
+}
